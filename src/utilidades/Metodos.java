@@ -116,7 +116,7 @@ public class Metodos {
 	 **/
 	public static void MostrarPila(PilaTDA a) {
 		PilaTDA aux = new PilaTF();
-
+		aux.InicializarPila();
 		CopiarPila(a, aux);
 
 		while (!aux.PilaVacia()) {
@@ -125,6 +125,33 @@ public class Metodos {
 		}
 
 	}
+	
+	/**
+	 * @Tarea: Muestra los elementos de la pila en un mismo renglon
+	 * @Parametros: pilas origen
+	 * @Devuelve: -
+	 * @Precondicion:las estruc. deben estar inicializadas
+	 **/
+	public static void MostrarPilaInline(PilaTDA a) {
+		PilaTDA aux = new PilaTF();
+		aux.InicializarPila();
+		CopiarPila(a, aux);
+		String str = "[";
+
+		while (!aux.PilaVacia()) {
+			StringBuilder sb = new StringBuilder();
+			sb.append("");
+			sb.append(aux.Tope());
+			String strAux = sb.toString();
+			str = str.concat(" " + strAux + " ");
+			aux.Desapilar();
+		}
+		
+		str = str.concat(" ]");
+		System.out.println(str);
+		
+	}
+
 
 	/**
 	 * @Tarea: Invierte el contenido de una pila

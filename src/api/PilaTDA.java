@@ -44,7 +44,7 @@ public interface PilaTDA {
 	  *  @Devuelve: verdero si la pila se encunetra vacia, caso contrario devuelve falso
 	  *  @Precondicion: la pila debe estar inicializada
 	  **/
-	boolean PilaVacia();
+	public boolean PilaVacia();
 
 	 /** 
 	  *  @#Tope
@@ -54,5 +54,14 @@ public interface PilaTDA {
 	  *  @Precondicion: la pila no debe estar vacia
 	  **/
 	public int Tope();
+	
+	 /** 
+	  *  @#LimpiarPila
+	  *  @Tarea: Elimina todos los elementos de una pila
+	  *  @Parametros: Pila para vaciar
+	  *  @Devuelve: -
+	  *  @Precondicion: la pila debe estar inicializada
+	  **/
+	public void LimpiarPila(PilaTDA p);
 
 }

@@ -6,6 +6,10 @@ public class PilaTF implements PilaTDA {
 
 	private int[] vector;
 	private int cant;
+	
+	public PilaTF() {
+		this.InicializarPila();
+	}
 
 	public void InicializarPila() {
 		// TODO Auto-generated method stub
@@ -32,6 +36,14 @@ public class PilaTF implements PilaTDA {
 	public int Tope() {
 		// TODO Auto-generated method stub
 		return vector[cant - 1];
+	}
+	
+	public void LimpiarPila(PilaTDA p) {
+		// TODO Auto-generated method stub
+		
+		while(!p.PilaVacia()) {
+			p.Desapilar();
+		}
 	}
 
 }
