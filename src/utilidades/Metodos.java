@@ -24,7 +24,7 @@ public class Metodos {
 	 * @Devuelve: -
 	 * @Precondicion: las estruc. deben estar inicializadas
 	 **/
-	public void PasarPila(PilaTDA origen, PilaTDA destino) {
+	public static void PasarPila(PilaTDA origen, PilaTDA destino) {
 		while (!origen.PilaVacia()) {
 			destino.Apilar(origen.Tope());
 			origen.Desapilar();
@@ -37,7 +37,7 @@ public class Metodos {
 	 * @Devuelve: -
 	 * @Precondicion:las estruc. deben estar inicializadas
 	 **/
-	public void CopiarPila(PilaTDA origen, PilaTDA destino) {
+	public static void CopiarPila(PilaTDA origen, PilaTDA destino) {
 		PilaTDA aux = new PilaTF();
 		aux.InicializarPila();
 
@@ -56,7 +56,7 @@ public class Metodos {
 	 * @Devuelve: (integer) cantidad de elementos de la pila
 	 * @Precondicion:las estruc. deben estar inicializadas
 	 **/
-	public int ContarElementosPila(PilaTDA origen) {
+	public static int ContarElementosPila(PilaTDA origen) {
 		int c = 0;
 		PilaTDA aux = new PilaTF();
 		CopiarPila(origen, aux);
@@ -69,7 +69,7 @@ public class Metodos {
 
 	}
 
-	public int SumaElementosPila(PilaTDA origen) {
+	public static int SumaElementosPila(PilaTDA origen) {
 		int c = 0;
 		PilaTDA aux = new PilaTF();
 		CopiarPila(origen, aux);
@@ -89,7 +89,7 @@ public class Metodos {
 	 * @Devuelve: (integer) promedio de lo elementos
 	 * @Precondicion:las estruc. deben estar inicializadas
 	 **/
-	public int PromedioElementosPila(PilaTDA origen) {
+	public static int PromedioElementosPila(PilaTDA origen) {
 		int c = 0;
 		int prom = 0;
 
@@ -114,7 +114,7 @@ public class Metodos {
 	 * @Devuelve: -
 	 * @Precondicion:las estruc. deben estar inicializadas
 	 **/
-	public void MostrarPila(PilaTDA a) {
+	public static void MostrarPila(PilaTDA a) {
 		PilaTDA aux = new PilaTF();
 
 		CopiarPila(a, aux);
@@ -132,7 +132,7 @@ public class Metodos {
 	 * @Devuelve: -
 	 * @Precondicion: la estructura pila debe estar inicializada
 	 **/
-	public void InvertirPila(PilaTDA a) {
+	public static void InvertirPila(PilaTDA a) {
 		ColaTDA aux = new ColaPU();
 
 		aux.InicializarCola();
@@ -147,7 +147,7 @@ public class Metodos {
 	 * @Devuelve: -
 	 * @Precondicion: ambas estructuras deben estar inicializadas
 	 **/
-	public void PasarPilaACola(PilaTDA p, ColaTDA c) {
+	public static void PasarPilaACola(PilaTDA p, ColaTDA c) {
 		while (!p.PilaVacia()) {
 			c.Acolar(p.Tope());
 			p.Desapilar();
@@ -160,7 +160,7 @@ public class Metodos {
 	 * @Devuelve: -
 	 * @Precondicion: ambas estructuras deben estar inicializadas
 	 **/
-	public void PasarColaApila(ColaTDA c, PilaTDA p) {
+	public static void PasarColaApila(ColaTDA c, PilaTDA p) {
 		while (!c.ColaVacia()) {
 			p.Apilar(c.Primero());
 			c.Desacolar();
@@ -179,13 +179,13 @@ public class Metodos {
 	 * @Devuelve: -
 	 * @Precondicion: ambas estructuras deben estar inicializadas
 	 **/
-	public void PasarCola(ColaTDA origen, ColaTDA destino) {
+	public static void PasarCola(ColaTDA origen, ColaTDA destino) {
 
 	}
 
 	
 	
-	public void InvertirCola(ColaTDA c) {
+	public static void InvertirCola(ColaTDA c) {
 		int x;
 		x=c.Primero();
 		c.Desacolar();

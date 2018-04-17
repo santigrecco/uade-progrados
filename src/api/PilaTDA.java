@@ -16,7 +16,7 @@ public interface PilaTDA {
 	 *  @Devuelve: - 
 	 *  @Precondicion:-
 	 **/
-	void InicializarPila();
+	public void InicializarPila();
 
 	
 	 /** 
@@ -26,7 +26,7 @@ public interface PilaTDA {
 	  *  @Devuelve: - 
 	  *  @Precondicion: la pila debe estar inicializada
 	  **/
-	void Apilar(int x);
+	public void Apilar(int x);
 
 	 /** 
 	  *  @#Desapilar 
@@ -35,7 +35,7 @@ public interface PilaTDA {
 	  *  @Devuelve: - 
 	  *  @Precondicion:la pila no debe estar vacia
 	  **/
-	void Desapilar();
+	public void Desapilar();
 	
 	 /** 
 	  *  @#PilaVacia
@@ -53,6 +53,6 @@ public interface PilaTDA {
 	  *  @Devuelve: valor del primer elemento a salir
 	  *  @Precondicion: la pila no debe estar vacia
 	  **/
-	int Tope();
+	public int Tope();
 
 }

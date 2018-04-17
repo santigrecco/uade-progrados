@@ -8,13 +8,13 @@ package api;
 
 public interface ColaTDA {
 
-	void InicializarCola();
+	public void InicializarCola();
 
-	void Acolar(int x);
+	public void Acolar(int x);
 
-	void Desacolar();
+	public void Desacolar();
 
-	boolean ColaVacia();
+	public boolean ColaVacia();
 
-	int Primero();	
+	public int Primero();	
 }
