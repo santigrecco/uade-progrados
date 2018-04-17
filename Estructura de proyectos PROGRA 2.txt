@@ -1,0 +1,9 @@
+En package utilidades tenemos todos los metodos por fuera de la implementacion, por ejemplo pasarPila, pasarCola
+
+En el package TP vamos a tener los mains que intancias la implementaciones
+
+	Puede haber Sub-Carpetas por los TPs que hagamos, cada su carpeta tiene sus propias clases 
+
+En el package API vamos a tener las distintas interfaces
+
+En el package implementaciones vamos a tener las implementaciones de las interfaces.
