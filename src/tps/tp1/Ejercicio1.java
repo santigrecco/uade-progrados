@@ -1,6 +1,8 @@
 package tps.tp1;
 
+import api.ColaPrioridadTDA;
 import api.PilaTDA;
+import implementaciones.arreglos.ColaPrioridadDA;
 import implementaciones.arreglos.PilaTF;
 import utilidades.*;
 
@@ -13,9 +15,14 @@ public class Ejercicio1 {
 				p2 = new PilaTF(), 
 				p3 = new PilaTF();
 		
-		//p1.InicializarPila();
-		//p2.InicializarPila();
-		//p3.InicializarPila();
+		p1.InicializarPila();
+		p2.InicializarPila();
+		p3.InicializarPila();
+		
+		ColaPrioridadTDA colaP = new ColaPrioridadDA();
+		colaP.InicializarCola();
+		
+
 		
 		p3.Apilar(23);
 		p3.Apilar(23);
@@ -34,6 +41,11 @@ public class Ejercicio1 {
 		p3.Desapilar();
 		
 		Metodos.MostrarPilaInline(p3);
+		
+		colaP.AcolarPrioridad(10, 2);
+		colaP.AcolarPrioridad(15, 3);
+		colaP.AcolarPrioridad(20, 0);
+		colaP.AcolarPrioridad(8, 90);
 	}
 
 }

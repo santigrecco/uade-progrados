@@ -17,9 +17,9 @@ public class ColaPU implements ColaTDA {
 		// TODO Auto-generated method stub
 		for (int i = indice -1; i >= 0; i--) {
 			a[i+1] = a[i];
+		}
 		a[0]=x;
 		indice++;
-		}
 	}
 
 	public void Desacolar() {

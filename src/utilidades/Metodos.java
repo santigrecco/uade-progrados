@@ -210,8 +210,30 @@ public class Metodos {
 
 	}
 
+
+	
+	/**
+	 * @Tarea: Invierte el contenido de una cola con pila auxiliar
+	 * @Parametros: cola c
+	 * @Devuelve: -
+	 * @Precondicion: la estructura debe estar inicializada
+	 **/
+	public static void InvertirColaSinPila(ColaTDA c) {
+		int x;
+		PilaTDA paux = new PilaTF();
+		paux.InicializarPila();
+		
+		
+	}
+
 	
 	
+	/**
+	 * @Tarea: Invierte el contenido de una cola
+	 * @Parametros: cola c
+	 * @Devuelve: -
+	 * @Precondicion: la estructura debe estar inicializada
+	 **/
 	public static void InvertirCola(ColaTDA c) {
 		int x;
 		x=c.Primero();
